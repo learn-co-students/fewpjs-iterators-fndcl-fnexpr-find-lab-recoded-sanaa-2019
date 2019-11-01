@@ -12,8 +12,8 @@ function testFunc() {
 function superbowlWin(record){
    let winRes=[];
    let resultFound = record.find(function(e){
-    winRes = e.result==="W";
-    return winRes;
+    return e.result==="W";
+    
   });
-  return winRes === true ? resultFound.year : undefined;
+  return resultFound ? resultFound.year : undefined;
 }
