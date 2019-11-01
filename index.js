@@ -10,7 +10,6 @@ function testFunc() {
 }
 
 function superbowlWin(record){
-   let winRes=[];
    let resultFound = record.find(function(e){
     return e.result==="W";
     
