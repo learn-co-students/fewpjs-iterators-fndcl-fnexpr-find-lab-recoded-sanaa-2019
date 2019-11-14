@@ -1,20 +1,28 @@
+
 const testVar = {}
 
 function testFunc() {
   return "hi"
 }
 
-function superbowlWin(array){
-  let arr = array.find(function(e){
-    
-     if(e.result === "W"){
-  return e.result
-}else{
-  return undefined
+superbowlWin(record)
+
+function superbowlWin(array) {
+  let arr = array.find(function (e) {
+    return e.result === "W"
+
+
+  })
+
+  if (arr != undefined) {
+    console.log(arr.year);
+
+    return arr.year
+  } else {
+    console.log(undefined);
+
+    return undefined
+  }
+
 }
-    
-})
 
-
-
-}
